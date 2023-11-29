@@ -1,12 +1,12 @@
-// import {
-//   VerticalTimeline,
-//   VerticalTimelineElement,
-// } from "react-vertical-timeline-component";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
 
-// import { CTA } from "../components";
+import  CTA  from "../components/CTA";
 import { experiences, skills } from "../constants/index";
 
-// import "react-vertical-timeline-component/style.min.css";
+import "react-vertical-timeline-component/style.min.css";
 
 const About = () => {
   return (
@@ -55,7 +55,7 @@ const About = () => {
         </div>
 
         <div className='mt-12 flex'>
-          {/* <VerticalTimeline>
+          <VerticalTimeline>
             {experiences.map((experience, index) => (
               <VerticalTimelineElement
                 key={experience.company_name}
@@ -101,13 +101,13 @@ const About = () => {
                 </ul>
               </VerticalTimelineElement>
             ))}
-          </VerticalTimeline> */}
+          </VerticalTimeline>
         </div>
       </div>
 
       <hr className='border-slate-200' />
 
-      {/* <CTA /> */}
+      <CTA />
     </section>
   );
 };
