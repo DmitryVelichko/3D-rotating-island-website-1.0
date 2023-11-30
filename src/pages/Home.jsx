@@ -1,17 +1,34 @@
 
 import { Canvas } from "@react-three/fiber"
-import { useState, Suspense } from "react"
+import { useState, Suspense, useEffect, useRef } from "react"
 import Island from "../models/Island";
 import Loader from "../components/Loader"
 import { Sky } from "../models/Sky";
 import { Bird } from "../models/Bird";
 import Plane from "../models/Plane";
 import HomeInfo from "../components/HomeInfo";
-
+import sakura from "../assets/sakura.mp3";
+import { soundoff, soundon } from "../assets/icons";
 
 const Home = () => {
     const [isRotating, setIsRotating] = useState(false);
     const [currentStage, setCurrentStage] = useState(1);
+    const [isPlayingMusic, setIsPlayingMusic] = useState(false);
+
+
+    const audioRef = useRef(new Audio(sakura));
+    audioRef.current.volume = 0.4;
+    audioRef.current.loop = true;
+
+    useEffect(() => {
+        if (isPlayingMusic) {
+            audioRef.current.play();
+        }
+
+        return () => {
+            audioRef.current.pause();
+        };
+    }, [isPlayingMusic]);
 
     const adjustBiplaneForScreenSize = () => {
         let screenScale, screenPosition;
@@ -86,8 +103,16 @@ const Home = () => {
                         scale={biplaneScale}
                     />
                 </Suspense>
-
             </Canvas>
+
+            <div className='absolute bottom-2 left-2'>
+                <img
+                    src={!isPlayingMusic ? soundoff : soundon}
+                    alt='jukebox'
+                    onClick={() => setIsPlayingMusic(!isPlayingMusic)}
+                    className='w-10 h-10 cursor-pointer object-contain'
+                />
+            </div>
 
         </section>
     )
