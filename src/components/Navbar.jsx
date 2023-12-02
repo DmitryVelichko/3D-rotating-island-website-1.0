@@ -15,9 +15,6 @@ const Navbar = () => {
         <NavLink to='/projects' className={({ isActive }) => isActive ? "hover:scale-125 scale-125 btn" : "hover:scale-125 btn max-h-[40px]"}>
           Portfolio
         </NavLink>
-        <NavLink to='/old/' className={({ isActive }) => isActive ? "hover:scale-125 scale-125 btn" : "overflow-hidden hover:scale-125 btn max-h-[40px]"}>
-          2D Website
-        </NavLink>
       </nav>
     </header>
   );
