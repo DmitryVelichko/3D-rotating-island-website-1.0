@@ -1,4 +1,4 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
+import { upwork, thirdweb, freelance, gnivc } from "../assets/images";
 import {
     car,
     contact,
@@ -111,55 +111,61 @@ export const skills = [
 
 export const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
+        title: "Web Developer Trainee",
+        company_name: "Upwork",
+        icon: upwork,
         iconBg: "#accbe1",
-        date: "March 2020 - April 2021",
+        date: "2019 - 2020",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
-        iconBg: "#fbc3bc",
-        date: "Jan 2021 - Feb 2022",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            `Took dozens of courses by FreeCodeCamp, London App Brewery, and many others.`,
+            `Developed basic landing pages for Upwork clients.`
         ],
     },
     {
         title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#b7e4c7",
-        date: "Jan 2022 - Jan 2023",
+        company_name: "Freelance",
+        icon: freelance,
+        iconBg: "#fbc3bc",
+        date: "2020 - 2021",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+            "Developed UI and Frontend for custom web apps using React, HTML5, CSS3, JS, Bootstrap.",
+            "Designed dynamic and multi-browser compatible pages.",
             "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Created reusable styled components using CSS preprocessors like SCSS.",
         ],
     },
     {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#a2d2ff",
-        date: "Jan 2023 - Present",
+        title: "Frontend Web Developer",
+        company_name: "GNIVC",
+        icon: gnivc,
+        iconBg: "#b7e4c7",
+        date: "2021 - 2022",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Developed company products as a part of a large team using React, TypeScript, SCSS, MobX, Jest, Figma, Gitea.",
+            "Responsible for developing a Task Manager app for a company. Fixed bugs and сreated reusable components for the company's UI Kit with React.Implemented Figma mock-up through working with SCSS.",
+            `Implemented Lazy loading to decrease the initial loading time for applications.
+            Developed unit tests using Jest. Used Git version control system, Jira, Confluence, Kanban board.`,
+            `Participated as a speaker in regular internal trainings for a company's developers.
+
+            Used Agile methodology for the development life cycle and followed the Scrum framework
+            
+            I’m currently working with ReactJS, TypeScript, MobX, and other technologies to create complex web apps.`,
+        ],
+    },
+    {
+        title: "Frontend Developer",
+        company_name: "ThirdWeb Pro Solutions",
+        icon: thirdweb,
+        iconBg: "#a2d2ff",
+        date: "2022 - Present",
+        points: [
+            "Lead a team of 5 engineers to successfully develop an NFT marketplace and 2 AI apps as a part of a remote team following Agile and Scrum methodology.",
+            "Communicated with clients and team in English (C1/proficient English level).",
+            "Collaborated with cross-functional teams, including UX/UI designers, developers, and product managers, to translate business requirements into user-friendly and visually appealing frontend solutions.",
+            "Optimized the performance of web applications, resulting in a 30% improvement in page load times and enhancing the overall user experience.",
+            "Implemented strategies to improve Lighthouse metrics resulting in a 25% increase in Lighthouse scores across 2 projects.",
+            "Increased the number of unit tests from 413 to 1217 because I was tired of bugs.",
+            "Tech Stack: NextJS, TypeScript, Redux, Solidity, HardHat, TailwindCSS",
         ],
     },
 ];
